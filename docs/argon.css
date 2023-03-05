@@ -12973,6 +12973,52 @@ a.btn-icon-only {
 .show>.btn-facebook.dropdown-toggle:focus {
     box-shadow: none, 0 0 0 0 rgba(59, 89, 153, .5)
 }
+/*/*/
+.btn-facebook {
+    color: #fff;
+    border-color: #3b5999;
+    background-color: #3b5999;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)
+}
+
+.btn-whatsapp {
+    color: #fff;
+    border-color: #25D366FF;
+    background-color: #25D366FF;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)
+}
+
+.btn-whatsapp:hover {
+    color: #fff;
+    border-color: #25D366FF;
+    background-color: #25D366FF;
+}
+
+.btn-whatsapp.focus,
+.btn-whatsapp:focus {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08), 0 0 0 0 rgb(37, 211, 102)
+}
+
+.btn-whatsapp.disabled,
+.btn-whatsapp:disabled {
+    color: #fff;
+    border-color: #25D366FF;
+    background-color: #25D366FF
+}
+
+.btn-whatsapp:not(:disabled):not(.disabled).active,
+.btn-whatsapp:not(:disabled):not(.disabled):active,
+.show>.btn-whatsapp.dropdown-toggle {
+    color: #fff;
+    border-color: #25D366FF;
+    background-color: #127338
+}
+
+.btn-whatsapp:not(:disabled):not(.disabled).active:focus,
+.btn-whatsapp:not(:disabled):not(.disabled):active:focus,
+.show>.btn-whatsapp.dropdown-toggle:focus {
+    box-shadow: none, 0 0 0 0 rgb(37, 211, 102)
+}
 
 .btn-twitter {
     color: #fff;
