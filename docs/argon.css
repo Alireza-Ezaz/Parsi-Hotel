@@ -9818,7 +9818,7 @@ button.bg-darker:hover {
     }
     .mr-lg-5,
     .mx-lg-5 {
-        margin-right: 3rem!important
+        scroll-margin-inline-end: 3rem!important
     }
     .mb-lg-5,
     .my-lg-5 {
@@ -9826,7 +9826,7 @@ button.bg-darker:hover {
     }
     .ml-lg-5,
     .mx-lg-5 {
-        margin-left: 3rem!important
+        margin-inline-start: 3rem!important
     }
     .m-lg--9 {
         margin: -10rem!important
