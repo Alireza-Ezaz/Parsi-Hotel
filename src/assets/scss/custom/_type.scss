@@ -19,6 +19,9 @@ p {
 
 .description {
 	font-size: $font-size-sm;
+	text-align: start;
+	//text-align: justify;
+	//text-justify: inter-word;
 }
 
 // Headings

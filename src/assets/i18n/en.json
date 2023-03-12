@@ -1,6 +1,14 @@
 {
   "Landing": {
-    "parsiHotelApartment": "Parsi Hotel Apartment"
+    "parsiHotelApartment": "Parsi Hotel Apartment",
+    "welcome": "Welcome to our hotel website, where we offer a range of comfortable rooms and excellent facilities for your stay.",
+    "roomsAndFacilities": "Rooms and Facilities",
+    "roomsAndFacilitiesDescription": "Come explore our luxurious rooms and exceptional facilities at Parsi Hotel. From our comfortable accommodations to our top-notch amenities, we have everything you need for a relaxing and enjoyable stay.",
+    "learnMore": "LEARN MORE",
+    "cafeAndRestaurant": "Cafe and Restaurant",
+    "cafeAndRestaurantDescription": "Indulge in the delicious culinary experiences at our restaurant and café, located in the heart of Parsi Hotel. Savor a wide range of cuisine options and enjoy the warm ambiance of our dining spaces.",
+    "sportComplex": "Sport Complex",
+    "sportComplexDescription": "Escape the heat and relax at the pool in Parsi Hotel, a tranquil oasis in the heart of the city. With plenty of loungers and a refreshing poolside bar, it's the perfect spot to unwind after a day of sightseeing or business meetings."
   },
   "General": {
     "language": "Language",

@@ -16,14 +16,16 @@
             </div>
             <div style="margin-top: 20px" class="container py-lg-md d-flex">
                 <div class="col px-0">
-                    <div class="row">
+                    <div style="justify-content: center" class="row">
                         <div style="background-color: rgba(10,12,13,0.5);border-radius: 0.35rem;" class="col-lg-6 ">
-                            <h1 style="font-size: xx-large"
+                            <h1 [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'rtl' : 'ltr'"
+                                style="text-align: start; font-size: xx-large"
                                 class="display-3  text-white">{{'Landing.parsiHotelApartment' | translate}}
                                 <!--                                <span>completed with examples</span>-->
                             </h1>
-                            <h2 class="lead  text-white">Welcome to our hotel website, where we offer a range of
-                                comfortable rooms and excellent facilities for your stay.</h2>
+                            <h2 [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'rtl' : 'ltr'"
+                                style="text-align: start"
+                                class="lead  text-white">{{'Landing.welcome' | translate}}</h2>
                             <!--                            <div class="btn-wrapper">-->
                             <!--                                <a href="https://demos.creative-tim.com/argon-design-system-angular/documentation/alerts?ref=adsa-landing-page"-->
                             <!--                                   class="btn btn-info btn-icon mb-3 mb-sm-0">-->
@@ -61,18 +63,17 @@
                                     <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
                                         <i class="fa fa-home"></i>
                                     </div>
-                                    <h6 class="text-primary text-uppercase">Rooms and Facilities</h6>
+                                    <h6 class="text-primary text-uppercase">{{'Landing.roomsAndFacilities' | translate}}</h6>
                                     <img style="width: 80%; height: 150px;border-radius: 0.35rem"
                                          src="assets/img/mainHotel/Room.jpg" class="">
-                                    <p class="description mt-3">Come explore our luxurious rooms and exceptional
-                                        facilities at Parsi Hotel. From our comfortable accommodations to our top-notch
-                                        amenities, we have everything you need for a relaxing and enjoyable stay.</p>
+                                    <p [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'rtl' : 'ltr'"
+                                       class="description mt-3">{{'Landing.roomsAndFacilitiesDescription' | translate}}</p>
                                     <!--                                    <div>-->
                                     <!--                                        <span class="badge badge-pill badge-primary">angular</span>-->
                                     <!--                                        <span class="badge badge-pill badge-primary">ng-bootstrap</span>-->
                                     <!--                                        <span class="badge badge-pill badge-primary">creative</span>-->
                                     <!--                                    </div>-->
-                                    <a href="javascript:void(0)" class="btn btn-primary mt-4">Learn more</a>
+                                    <a href="javascript:void(0)" class="btn btn-primary mt-4">{{'Landing.learnMore' | translate}}</a>
                                 </div>
                             </div>
                         </div>
@@ -82,18 +83,16 @@
                                     <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
                                         <i class="fa fa-pizza-slice "></i>
                                     </div>
-                                    <h6 class="text-success text-uppercase">Cafe and Restaurant</h6>
+                                    <h6 class="text-success text-uppercase">{{'Landing.cafeAndRestaurant' | translate}}</h6>
                                     <img style="width: 80%; height: 150px;border-radius: 0.35rem"
                                          src="assets/img/mainHotel/Restaurant.jpeg" class="">
-                                    <p class="description mt-3">Indulge in the delicious culinary experiences at our
-                                        restaurant and café, located in the heart of Parsi Hotel. Savor a wide range of
-                                        cuisine options and enjoy the warm ambiance of our dining spaces.</p>
+                                    <p [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'rtl' : 'ltr'" class="description mt-3">{{'Landing.cafeAndRestaurantDescription' | translate}}</p>
                                     <!--                                    <div>-->
                                     <!--                                        <span class="badge badge-pill badge-success">business</span>-->
                                     <!--                                        <span class="badge badge-pill badge-success">vision</span>-->
                                     <!--                                        <span class="badge badge-pill badge-success">success</span>-->
                                     <!--                                    </div>-->
-                                    <a href="javascript:void(0)" class="btn btn-success mt-4">Learn more</a>
+                                    <a href="javascript:void(0)" class="btn btn-success mt-4">{{'Landing.learnMore' | translate}}</a>
                                 </div>
                             </div>
                         </div>
@@ -103,19 +102,17 @@
                                     <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
                                         <i class="fa fa-person-swimming"></i>
                                     </div>
-                                    <h6 class="text-warning text-uppercase">Sport Complex</h6>
+                                    <h6 class="text-warning text-uppercase">{{'Landing.sportComplex' | translate}}</h6>
                                     <img style="width: 80%; height: 150px;border-radius: 0.35rem"
                                          src="assets/img/mainHotel/Pool.jpeg" class="">
-                                    <p class="description mt-3">Escape the heat and relax at the pool in Parsi Hotel, a
-                                        tranquil oasis in the heart of the city. With plenty of loungers and a
-                                        refreshing poolside bar, it's the perfect spot to unwind after a day of
-                                        sightseeing or business meetings.</p>
+                                    <p [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'rtl' : 'ltr'"
+                                       class="description mt-3">{{'Landing.sportComplexDescription' | translate}}</p>
                                     <!--                                    <div>-->
                                     <!--                                        <span class="badge badge-pill badge-warning">marketing</span>-->
                                     <!--                                        <span class="badge badge-pill badge-warning">product</span>-->
                                     <!--                                        <span class="badge badge-pill badge-warning">launch</span>-->
                                     <!--                                    </div>-->
-                                    <a href="javascript:void(0)" class="btn btn-warning mt-4">Learn more</a>
+                                    <a href="javascript:void(0)" class="btn btn-warning mt-4">{{'Landing.learnMore' | translate}}</a>
                                 </div>
                             </div>
                         </div>
