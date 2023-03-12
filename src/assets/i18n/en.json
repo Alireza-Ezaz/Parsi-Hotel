@@ -1,0 +1,17 @@
+{
+  "Landing": {
+    "parsiHotelApartment": "Parsi Hotel Apartment"
+  },
+  "General": {
+    "language": "Language",
+    "english": "English",
+    "arabic": "Arabic",
+    "persian": "Persian",
+    "aboutUs": "About us",
+    "contactUs": "Contact us"
+  },
+  "Placeholder": {
+    "callUs": "Call us for more information",
+    "followUs": "Call us for more information"
+  }
+}

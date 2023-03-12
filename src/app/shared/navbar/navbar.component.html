@@ -1,118 +1,116 @@
-<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
-  <div class="container">
+<nav [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'rtl':  'ltr'" id="navbar-main"
+     class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+    <div class="container">
 
-    <a class="navbar-brand mr-lg-5" [routerLink]="['/landing']">
-      <img style="width: 100px;height: 100px" src="./assets/img/brand/Parsi-logos_transparent.png">
-    </a>
+        <a class="navbar-brand mr-lg-5" [routerLink]="['/landing']">
+            <img style="width: 100px;height: 100px" src="./assets/img/brand/Parsi-logos_transparent.png">
+        </a>
 
-    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
-          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <button
+                class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+                [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
-      <div class="navbar-collapse-header">
-        <div class="row">
-          <div class="col-6 collapse-brand">
-            <a [routerLink]="['/home']">
-              <img src="./assets/img/brand/blue.png">
-            </a>
-          </div>
-          <div class="col-6 collapse-close">
-            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
-                  [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-        <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
-            <i class="ni ni-ui-04 d-lg-none"></i>
-            <span class="nav-link-inner--text">About us</span>
-          </a>
-          <div class="dropdown-menu-xl dropdown-menu" >
-            <div class="dropdown-menu-inner">
-              <a routerLinkActive="active" [routerLink]="['documentation/tutorial']" class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                  <i class="ni ni-spaceship"></i>
+        <div [style]=" isCollapsed ? 'background-color: rgba(10,12,13,0.5);border-radius: 0.35rem;' : ''"
+             class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+
+            <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-6 collapse-brand">
+                        <a [routerLink]="['/landing']">
+                            <img src="./assets/img/brand/Parsi-logos_transparent.png">
+                        </a>
+                    </div>
+                    <div class="col-6 collapse-close">
+                        <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+                                [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
-                <div class="media-body ml-3">
-                  <h6 class="heading text-primary mb-md-1">Getting started</h6>
-                  <p class="description d-none d-md-inline-block mb-0">Learn how to use Argon compiling Scss, change brand colors and more.</p>
-                </div>
-              </a>
-              <a routerLinkActive="active" [routerLink]="['documentation/colors']" class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                  <i class="ni ni-palette"></i>
-                </div>
-                <div class="media-body ml-3">
-                  <h6 class="heading text-primary mb-md-1">Foundation</h6>
-                  <p class="description d-none d-md-inline-block mb-0">Learn more about colors, typography, icons and the grid system we used for Argon.</p>
-                </div>
-              </a>
-              <a routerLinkActive="active" [routerLink]="['documentation/alerts']" class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                  <i class="ni ni-ui-04"></i>
-                </div>
-                <div class="media-body ml-3">
-                  <h5 class="heading text-warning mb-md-1">Components</h5>
-                  <p class="description d-none d-md-inline-block mb-0">Browse our 50 beautiful handcrafted components offered in the Free version.</p>
-                </div>
-              </a>
             </div>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
-            <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Contact us</span>
-          </a>
-          <div class="dropdown-menu">
-            <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
-            <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
-            <a [routerLink]="['/login']" class="dropdown-item">Login</a>
-            <a [routerLink]="['/register']" class="dropdown-item">Register</a>
-          </div>
-        </li>
-      </ul>
-      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-        <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="tel:+982166969665" target="_blank" data-toggle="tooltip" title="Call us for more information">
-            <i class="fa fa-phone"></i>
-            <span class="nav-link-inner--text d-lg-none">Phone</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://instagram.com/parsi.hotel?igshid=YmMyMTA2M2Y=" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
-            <i class="fa fa-instagram"></i>
-            <span class="nav-link-inner--text d-lg-none">Instagram</span>
-          </a>
-        </li>
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">-->
-<!--            <i class="fa fa-twitter-square"></i>-->
-<!--            <span class="nav-link-inner&#45;&#45;text d-lg-none">Twitter</span>-->
-<!--          </a>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial/argon-design-system-angular?ref=adsa-navbar" target="_blank" data-toggle="tooltip" title="Star us on Github">-->
-<!--            <i class="fa fa-github"></i>-->
-<!--            <span class="nav-link-inner&#45;&#45;text d-lg-none">Github</span>-->
-<!--          </a>-->
-<!--        </li>-->
-<!--        <li class="nav-item d-none d-lg-block ml-lg-4">-->
-<!--          <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar" target="_blank" class="btn btn-neutral btn-icon">-->
-<!--            <span class="btn-inner&#45;&#45;icon">-->
-<!--              <i class="fa fa-cloud-download mr-2"></i>-->
-<!--            </span>-->
-<!--            <span class="nav-link-inner&#45;&#45;text">Download</span>-->
-<!--          </a>-->
-<!--        </li>-->
-      </ul>
-    </div>
 
-  </div>
+            <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+
+                <li style="cursor: pointer" class="nav-item dropdown">
+                    <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+                        <!--                        <i class="ni ni-collection d-lg-none"></i>-->
+                        <i style="margin-inline-end: 10px" class="fa fa-globe"></i>
+                        <span class="nav-link-inner--text">{{"General.language" | translate}}</span>
+                    </a>
+                    <div style="text-align: start" class="dropdown-menu">
+                        <a style="cursor: pointer" (click)="useLanguage('en')"
+                           class="dropdown-item">{{"General.english" | translate}}</a>
+                        <a style="cursor: pointer" (click)="useLanguage('fa')"
+                           class="dropdown-item">{{"General.persian" | translate}}</a>
+                        <a style="cursor: pointer" (click)="useLanguage('ar')"
+                           class="dropdown-item">{{"General.arabic" | translate}}</a>
+                    </div>
+                </li>
+
+                <li style="cursor: pointer" class="nav-item dropdown">
+                    <a [routerLink]="['/user-profile']" class="nav-link no-caret" data-toggle="dropdown" role="button">
+                        <i class="ni ni-ui-04 d-lg-none"></i>
+                        <span class="nav-link-inner--text">{{"General.aboutUs" | translate}}</span>
+                    </a>
+                </li>
+
+                <li style="cursor: pointer" class="nav-item dropdown">
+                    <a [routerLink]="['/login']" class="nav-link no-caret" data-toggle="dropdown" role="button">
+                        <i class="ni ni-collection d-lg-none"></i>
+                        <span class="nav-link-inner--text">{{"General.contactUs" | translate}}</span>
+                    </a>
+                    <!--                    <div class="dropdown-menu">-->
+                    <!--                        <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>-->
+                    <!--                        <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>-->
+                    <!--                        <a [routerLink]="['/login']" class="dropdown-item">Login</a>-->
+                    <!--                        <a [routerLink]="['/register']" class="dropdown-item">Register</a>-->
+                    <!--                    </div>-->
+                </li>
+
+            </ul>
+
+
+            <ul style="margin-inline-start: auto;margin-inline-end: 20px" class="navbar-nav align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="tel:+982166969665" target="_blank" data-toggle="tooltip"
+                       title="{{'Placeholder.callUs' | translate}}">
+                        <i class="fa fa-phone"></i>
+                        <span class="nav-link-inner--text d-lg-none">Phone</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="https://instagram.com/parsi.hotel?igshid=YmMyMTA2M2Y="
+                       target="_blank" data-toggle="tooltip" title="{{'Placeholder.followUs' | translate}}">
+                        <i class="fa fa-instagram"></i>
+                        <span class="nav-link-inner--text d-lg-none">Instagram</span>
+                    </a>
+                </li>
+                <!--        <li class="nav-item">-->
+                <!--          <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">-->
+                <!--            <i class="fa fa-twitter-square"></i>-->
+                <!--            <span class="nav-link-inner&#45;&#45;text d-lg-none">Twitter</span>-->
+                <!--          </a>-->
+                <!--        </li>-->
+                <!--        <li class="nav-item">-->
+                <!--          <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial/argon-design-system-angular?ref=adsa-navbar" target="_blank" data-toggle="tooltip" title="Star us on Github">-->
+                <!--            <i class="fa fa-github"></i>-->
+                <!--            <span class="nav-link-inner&#45;&#45;text d-lg-none">Github</span>-->
+                <!--          </a>-->
+                <!--        </li>-->
+                <!--        <li class="nav-item d-none d-lg-block ml-lg-4">-->
+                <!--          <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar" target="_blank" class="btn btn-neutral btn-icon">-->
+                <!--            <span class="btn-inner&#45;&#45;icon">-->
+                <!--              <i class="fa fa-cloud-download mr-2"></i>-->
+                <!--            </span>-->
+                <!--            <span class="nav-link-inner&#45;&#45;text">Download</span>-->
+                <!--          </a>-->
+                <!--        </li>-->
+            </ul>
+
+        </div>
+
+    </div>
 </nav>

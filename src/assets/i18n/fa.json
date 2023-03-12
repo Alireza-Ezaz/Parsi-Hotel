@@ -1,0 +1,17 @@
+{
+  "Landing": {
+    "parsiHotelApartment": "هتل آپارتمان پارسی"
+  },
+  "General": {
+    "language": "زبان",
+    "english": "انگلیسی",
+    "arabic": "عربی",
+    "persian": "فارسی",
+    "aboutUs": "درباره‌ی ما",
+    "contactUs": "ارتباط با ما"
+  },
+  "Placeholder": {
+    "callUs": "برای اطلاعات بیشتر با ما تماس بگیرید",
+    "followUs": "ما را در اینستاگرام دنبال کنید"
+  }
+}

@@ -1,17 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
     selector: 'app-landing',
     templateUrl: './landing.component.html',
-    styleUrls: ['./landing.component.scss','../../../node_modules/@fortawesome/fontawesome-free/css/all.css']
+    styleUrls: ['./landing.component.scss', '../../../node_modules/@fortawesome/fontawesome-free/css/all.css']
 })
 
 export class LandingComponent implements OnInit {
-  focus: any;
-  focus1: any;
+    focus: any;
+    focus1: any;
 
-  constructor() { }
+    constructor(private translate: TranslateService) {
+    }
 
-  ngOnInit() {}
+    ngOnInit() {
+    }
+
+    getLanguage() {
+        return this.translate.currentLang;
+    }
 
 }
