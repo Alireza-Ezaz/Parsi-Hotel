@@ -1,9 +1,10 @@
 <nav [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'rtl':  'ltr'" id="navbar-main"
      class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
-    <div class="container">
+    <div [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'rtl':  'ltr'" class="container" [style]=" !isCollapsed ? 'background-color: rgba(10,12,13,0.5);border-radius: 0.35rem;' : ''">
 
-        <a class="navbar-brand mr-lg-5" [routerLink]="['/landing']">
-            <img style="width: 100px;height: 100px" src="./assets/img/brand/Parsi-logos_transparent.png">
+        <a style="font-family: logo-font !important; color: white; margin-inline-end: 3rem !important;" class="navbar-brand" [routerLink]="['/landing']">
+<!--            <img style="width: 100px;height: 100px" src="./assets/img/brand/Parsi-logos_transparent.png">-->
+            ParsiHotel
         </a>
 
         <button
@@ -12,7 +13,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div [style]=" isCollapsed ? 'background-color: rgba(10,12,13,0.5);border-radius: 0.35rem;' : ''"
+        <div
              class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
 
             <div class="navbar-collapse-header">

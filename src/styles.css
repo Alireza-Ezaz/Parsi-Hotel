@@ -27,6 +27,11 @@
     font-family: 'primaryFont-Fa';
     font-weight: 800;
 }
+
+@font-face {
+    src: url('assets/fonts/AbrilFatface-Regular.ttf');
+    font-family: 'logo-font';
+}
 * {
     font-family: primaryFont-Fa;
 }
