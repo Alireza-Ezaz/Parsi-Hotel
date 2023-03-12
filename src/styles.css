@@ -3,6 +3,30 @@
     src: url('assets/fonts/iransansX/IRANSansX-Regular.ttf');
     font-family: 'primaryFont-Fa';
 }
-body {
-    font-family: primaryFont-En, primaryFont-Fa;
+
+@font-face {
+    src: url('assets/fonts/iransansX/IRANSansX-Light.ttf');
+    font-family: 'primaryFont-Fa';
+    font-weight: 100;
+}
+
+@font-face {
+    src: url('assets/fonts/iransansX/IRANSansX-Medium.ttf');
+    font-family: 'primaryFont-Fa';
+    font-weight: 500;
+}
+
+@font-face {
+    src: url('assets/fonts/iransansX/IRANSansX-Bold.ttf');
+    font-family: 'primaryFont-Fa';
+    font-weight: 700;
+}
+
+@font-face {
+    src: url('assets/fonts/iransansX/IRANSansX-ExtraBold.ttf');
+    font-family: 'primaryFont-Fa';
+    font-weight: 800;
+}
+* {
+    font-family: primaryFont-Fa;
 }
