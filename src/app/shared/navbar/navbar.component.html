@@ -13,17 +13,16 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div
-             class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+        <div  class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
 
             <div class="navbar-collapse-header">
                 <div class="row">
                     <div class="col-6 collapse-brand">
-                        <a [routerLink]="['/landing']">
-                            <img src="./assets/img/brand/Parsi-logos_transparent.png">
+                        <a style="font-family: logo-font !important; color: black; font-size: 1.7rem" [routerLink]="['/landing']">
+                            ParsiHotel
                         </a>
                     </div>
-                    <div class="col-6 collapse-close">
+                    <div [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'ltr':  'rtl'" class="col-6 collapse-close">
                         <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
                                 [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
                             <span></span>
