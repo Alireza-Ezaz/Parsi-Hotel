@@ -10,6 +10,13 @@
     "sportComplex": "Sport Complex",
     "sportComplexDescription": "Escape the heat and relax at the pool in Parsi Hotel, a tranquil oasis in the heart of the city. With plenty of loungers and a refreshing poolside bar, it's the perfect spot to unwind after a day of sightseeing or business meetings."
   },
+  "Footer": {
+    "address1": "Tehran, Parsi Hotel, West Nazari st, 12th Farvardin st, Enghelab st, Enghelab sq ",
+    "address2": "Tehran, Pars Hotel, Ravanmehr st, Fafhre Razi st, Enghelab st, Enghelab sq ",
+    "address3": "Mashhad, Kimia Hotel, Ravanmehr st, Fafhre Razi st, Enghelab st, Emam Reza st, 8th Emam Reza st, 6th Hanaei Crossroad ",
+    "telephone": "Telephone: +982166969665",
+    "whatsapp": "Whatsapp: +989021224517"
+  },
   "General": {
     "language": "Language",
     "english": "English",

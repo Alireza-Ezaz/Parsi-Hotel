@@ -19,36 +19,37 @@
     <!--    </div>-->
     <!--  </div>-->
     <div class="container">
-        <div class="row row-grid align-items-center"
+        <div [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'rtl' : 'ltr'"
+             class="row row-grid align-items-center"
              [ngClass]="{'my-md': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login', 'mb-5':getPath()==='/user-profile' || getPath()==='/register' || getPath()==='/login'}">
             <div class="col-lg-4">
                 <!--        <h3 class="text-primary font-weight-light mb-2">Thank you for supporting us!</h3>-->
                 <!--        <h4 class="mb-2 font-weight-light">Let's get in touch on any of these platforms.</h4>-->
                 <h5 class=" text-primary mb-1 font-weight-light">
                     <i style="margin-inline-end: 7px" class="fa fa-map-marker"></i>
-                    Tehran, Parsi Hotel, West Nazari st, 12th Farvardin st, Enghelab st, Enghelab sq
+                    {{'Footer.address1' | translate}}
                 </h5>
                 <h6 class=" mb-1 font-weight-light">
                     <i style="margin-inline-end: 7px" class="fa fa-location-arrow"></i>
-                    Parsi Hotel, West Nazari st, 12th Farvardin st, Enghelab st, Enghelab sq
+                    {{'Footer.address2' | translate}}
                 </h6>
                 <h6 class=" mb-1 font-weight-light">
                     <i style="margin-inline-end: 7px" class="fa fa-location-arrow"></i>
-                    Parsi Hotel, West Nazari st, 12th Farvardin st, Enghelab st, Enghelab sq
+                    {{'Footer.address3' | translate}}
                 </h6>
             </div>
             <div class="col-lg-4">
                 <h5 class="text-primary font-weight-light mb-2">
-                    <i class="fa fa-phone"></i>
-                    Telephone: +982166969665
+                    <i style="margin-inline-end: 7px" class="fa fa-phone"></i>
+                    {{'Footer.telephone' | translate}}
                 </h5>
                 <h5 class="text-primary font-weight-light mb-2">
-                    <i class="fa fa-whatsapp"></i>
-                    Whatsapp: +989021224517
+                    <i style="margin-inline-end: 7px" class="fa fa-whatsapp"></i>
+                    {{'Footer.whatsapp' | translate}}
                 </h5>
             </div>
             <div class="col-lg-4 text-lg-center btn-wrapper">
-                <a style="background-color: #25D366FF" target="_blank" href="https://wa.me/989021224517"
+                <a style="margin-inline-end: 7px" style="background-color: #25D366FF" target="_blank" href="https://wa.me/989021224517"
                    class="btn  btn-icon-only btn-round btn-lg" ngbTooltip="contact us">
                     <i style="color: white" class="fa fa-whatsapp"></i>
                 </a>
