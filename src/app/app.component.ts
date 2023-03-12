@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
                 private element: ElementRef,
                 public location: Location) {
         translate.setDefaultLang('en');
-        translate.use('en');
+        translate.use('fa');
     }
 
     @HostListener('window:scroll', ['$event'])
