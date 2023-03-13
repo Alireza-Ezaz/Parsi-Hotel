@@ -50,25 +50,32 @@
                     </div>
                 </li>
 
+                <li *ngIf="!isHome()" style="cursor: pointer" class="nav-item dropdown">
+                    <a [routerLink]="['/landing']" class="nav-link no-caret" data-toggle="dropdown" role="button">
+                        <i style="margin-inline-end: 10px" class="fa fa-home"></i>
+                        <span class="nav-link-inner--text">{{"General.home" | translate}}</span>
+                    </a>
+                </li>
+
                 <li style="cursor: pointer" class="nav-item dropdown">
-                    <a [routerLink]="['/user-profile']" class="nav-link no-caret" data-toggle="dropdown" role="button">
+                    <a [routerLink]="['/about-us']" class="nav-link no-caret" data-toggle="dropdown" role="button">
                         <i class="ni ni-ui-04 d-lg-none"></i>
                         <span class="nav-link-inner--text">{{"General.aboutUs" | translate}}</span>
                     </a>
                 </li>
 
-                <li style="cursor: pointer" class="nav-item dropdown">
-                    <a [routerLink]="['/login']" class="nav-link no-caret" data-toggle="dropdown" role="button">
-                        <i class="ni ni-collection d-lg-none"></i>
-                        <span class="nav-link-inner--text">{{"General.contactUs" | translate}}</span>
-                    </a>
-                    <!--                    <div class="dropdown-menu">-->
-                    <!--                        <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>-->
-                    <!--                        <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>-->
-                    <!--                        <a [routerLink]="['/login']" class="dropdown-item">Login</a>-->
-                    <!--                        <a [routerLink]="['/register']" class="dropdown-item">Register</a>-->
-                    <!--                    </div>-->
-                </li>
+<!--                <li style="cursor: pointer" class="nav-item dropdown">-->
+<!--                    <a [routerLink]="['/login']" class="nav-link no-caret" data-toggle="dropdown" role="button">-->
+<!--                        <i class="ni ni-collection d-lg-none"></i>-->
+<!--                        <span class="nav-link-inner&#45;&#45;text">{{"General.contactUs" | translate}}</span>-->
+<!--                    </a>-->
+<!--                    &lt;!&ndash;                    <div class="dropdown-menu">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <a [routerLink]="['/login']" class="dropdown-item">Login</a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <a [routerLink]="['/register']" class="dropdown-item">Register</a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--                </li>-->
 
             </ul>
 

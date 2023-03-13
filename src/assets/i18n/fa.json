@@ -25,11 +25,12 @@
   },
   "General": {
     "language": "زبان",
-    "english": "انگلیسی",
-    "arabic": "عربی",
+    "english": "English",
+    "arabic": "العربیه",
     "persian": "فارسی",
     "aboutUs": "درباره‌ی ما",
-    "contactUs": "ارتباط با ما"
+    "contactUs": "ارتباط با ما",
+    "home": "خانه"
   },
   "Placeholder": {
     "callUs": "برای اطلاعات بیشتر با ما تماس بگیرید",
