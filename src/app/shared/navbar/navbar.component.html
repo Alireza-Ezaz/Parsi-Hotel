@@ -40,8 +40,10 @@
                         <i style="margin-inline-end: 10px" class="fa fa-globe"></i>
                         <span class="nav-link-inner--text">{{"General.language" | translate}}</span>
                     </div>
-                    <div style="display: flex; flex-direction: row">
-                        <mat-radio-group  style="margin: 9px" aria-label="Select language">
+                    <div *ngIf="!isCollapsed" style="display: flex; flex-direction: row">
+                        <mat-radio-group
+                                style="display: flex; width: 100%;align-items: center;justify-content: space-between;margin: 9px"
+                                aria-label="Select language">
                             <mat-radio-button (click)="useLanguage('en')" [checked]="getLanguage() === 'en'" style="margin-inline-start: 0.3rem; " value="1">{{"General.english" | translate}}</mat-radio-button>
                             <mat-radio-button (click)="useLanguage('fa')" [checked]="getLanguage() === 'fa'" style="margin-inline-start: 0.3rem; " value="2">{{"General.persian" | translate}}</mat-radio-button>
                             <mat-radio-button (click)="useLanguage('ar')" [checked]="getLanguage() === 'ar'" style="margin-inline-start: 0.3rem; " value="3">{{"General.arabic" | translate}}</mat-radio-button>
@@ -68,7 +70,7 @@
 
                 <li style="cursor: pointer" class="nav-item dropdown">
                     <a [routerLink]="['/about-us']" class="nav-link no-caret" data-toggle="dropdown" role="button">
-                        <i class="ni ni-ui-04 d-lg-none"></i>
+                        <i style="margin-inline-end: 10px"  class="ni ni-ui-04 d-lg-none"></i>
                         <span class="nav-link-inner--text">{{"General.aboutUs" | translate}}</span>
                     </a>
                 </li>
@@ -93,15 +95,15 @@
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="tel:+982166969665" target="_blank" data-toggle="tooltip"
                        title="{{'Placeholder.callUs' | translate}}">
-                        <i class="fa fa-phone"></i>
-                        <span class="nav-link-inner--text d-lg-none">Phone</span>
+                        <i style="margin-inline-end: 10px"  class="fa fa-phone"></i>
+                        <span class="nav-link-inner--text d-lg-none">{{"General.call" | translate}}</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="https://instagram.com/parsi.hotel?igshid=YmMyMTA2M2Y="
                        target="_blank" data-toggle="tooltip" title="{{'Placeholder.followUs' | translate}}">
-                        <i class="fa fa-instagram"></i>
-                        <span class="nav-link-inner--text d-lg-none">Instagram</span>
+                        <i style="margin-inline-end: 10px"  class="fa fa-instagram"></i>
+                        <span class="nav-link-inner--text d-lg-none">{{"General.instagram" | translate}}</span>
                     </a>
                 </li>
                 <!--        <li class="nav-item">-->
