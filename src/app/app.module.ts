@@ -20,6 +20,8 @@ import { LoginComponent } from './login/login.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     RouterModule,
     AppRoutingModule,
     HomeModule,
+    MatRadioModule,
     // ngx-translate and the loader module
     HttpClientModule,
     TranslateModule.forRoot({
@@ -46,7 +49,8 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

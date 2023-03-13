@@ -35,11 +35,20 @@
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
 
                 <li style="cursor: pointer" class="nav-item dropdown">
-                    <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+                    <div class="nav-link no-caret" data-toggle="dropdown" role="button">
                         <!--                        <i class="ni ni-collection d-lg-none"></i>-->
                         <i style="margin-inline-end: 10px" class="fa fa-globe"></i>
                         <span class="nav-link-inner--text">{{"General.language" | translate}}</span>
-                    </a>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                        <mat-radio-group  style="margin: 9px" aria-label="Select language">
+                            <mat-radio-button (click)="useLanguage('en')" [checked]="getLanguage() === 'en'" style="margin-inline-start: 0.3rem; " value="1">{{"General.english" | translate}}</mat-radio-button>
+                            <mat-radio-button (click)="useLanguage('fa')" [checked]="getLanguage() === 'fa'" style="margin-inline-start: 0.3rem; " value="2">{{"General.persian" | translate}}</mat-radio-button>
+                            <mat-radio-button (click)="useLanguage('ar')" [checked]="getLanguage() === 'ar'" style="margin-inline-start: 0.3rem; " value="3">{{"General.arabic" | translate}}</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+
+
                     <div style="text-align: start" class="dropdown-menu">
                         <a style="cursor: pointer" (click)="useLanguage('en')"
                            class="dropdown-item">{{"General.english" | translate}}</a>
