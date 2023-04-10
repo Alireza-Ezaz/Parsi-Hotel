@@ -8,6 +8,8 @@ import {ProfileComponent} from './profile/profile.component';
 import {SignupComponent} from './signup/signup.component';
 import {LandingComponent} from './landing/landing.component';
 import {LoginComponent} from './login/login.component';
+import {CafeComponent} from './cafe/cafe.component';
+import {PoolComponent} from './pool/pool.component';
 
 const routes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -15,6 +17,8 @@ const routes: Routes = [
     {path: 'register', component: SignupComponent},
     {path: 'landing', component: LandingComponent},
     {path: 'login', component: LoginComponent},
+    {path: 'cafe', component: CafeComponent},
+    {path: 'pool', component: PoolComponent},
     {path: '', redirectTo: 'landing', pathMatch: 'full'}
 ];
 

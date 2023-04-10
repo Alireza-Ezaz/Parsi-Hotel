@@ -22,6 +22,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatRadioModule} from '@angular/material/radio';
+import { CafeComponent } from './cafe/cafe.component';
+import { PoolComponent } from './pool/pool.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import {MatRadioModule} from '@angular/material/radio';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    CafeComponent,
+    PoolComponent
   ],
   imports: [
     BrowserModule,

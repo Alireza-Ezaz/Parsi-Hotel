@@ -14,6 +14,14 @@
     "aboutUs": "About us",
     "description": "Kimiai Apartment Hotel in Tehran was opened as the second branch of Kimiai Apartment Hotel in Mashhad in 1381. After that, Pars Apartment Hotel located on Fakhrazi Street was opened and Kimiai Hotel Tehran was under construction project. In 1385, Kimia Hotel started its work with its new name \"Parsi\" and since then this hotel was known by both names Parsi and Kimia. Kimia Hotel is located in the heart of the capital and has easy access to tourist and tourism centers like shopping centers, international exhibitions, hospitals, medical institutions, historical attractions, companies, and organizations. It also has excellent access to train and bus stations. By taxi there is a 15-minute distance to Mehrabad Airport and West Terminal is ready to serve you as well, dear tourists. The facilities and services of the hotel include a sports complex (swimming pool, sauna, jacuzzi, etc.), restaurant, meeting hall, cafe, fast food restaurant, free internet on all floors and rooms, free breakfast, room service 24 hours, airport transfer, business center, laundry and ticket reservation services for dear customers. Also, we believe that the type of treatment with the guest will be the most important factor in gaining your satisfaction, the personnel hotel has always been handpicked and they give this honor to our collection so that you can treat Kimia Hotel like a home in the city. Consider Tehran."
   },
+  "Pool": {
+    "comingSoon": "Coming soon ...",
+    "description": "The sports complex of Kimia Hotel including a swimming pool, dry and steam sauna, jacuzzi, mist tunnel, massage parlor, etc. will soon be ready to serve the hotel guests with a special discount, as well as the general citizens and dear travelers.\n\nAlso, the sports complex of Kimia Hotel will be ready to sign contracts with organizations, institutions, schools, etc., to get the honor of hosting them."
+  },
+    "Cafe": {
+        "cafeMenu": "Cafe Menu",
+        "cafeName": "Parsi Cafe and Restaurant"
+    },
   "Footer": {
     "address1": "Tehran, Parsi Hotel, West Nazari st, 12th Farvardin st, Enghelab st, Enghelab sq ",
     "address2": "Tehran, Pars Hotel, Ravanmehr st, Fafhre Razi st, Enghelab st, Enghelab sq ",

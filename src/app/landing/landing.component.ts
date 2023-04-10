@@ -21,4 +21,5 @@ export class LandingComponent implements OnInit {
         return this.translate.currentLang;
     }
 
+
 }
