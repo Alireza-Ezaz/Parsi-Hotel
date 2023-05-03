@@ -34,56 +34,144 @@
 
                             <nav>
                                 <ul>
-                                    <li><a href="#breakfast">Breakfast</a></li>
-                                    <li><a href="#lunch">Lunch</a></li>
-                                    <li><a href="#dinner">Dinner</a></li>
-                                    <li><a href="#desserts">Desserts</a></li>
+                                    <li><a href="#persianFood">{{"Cafe.persianFood" | translate}}</a></li>
+                                    <li><a href="#foodOfTheDay">{{"Cafe.foodOfTheDay" | translate}}</a></li>
+                                    <li><a href="#breakfast">{{"Cafe.breakfast" | translate}}</a></li>
+                                    <li><a href="#snack">{{"Cafe.snack" | translate}}</a></li>
+                                    <li><a href="#mainCourse">{{"Cafe.mainCourse" | translate}}</a></li>
+                                    <li><a href="#salad">{{"Cafe.salad" | translate}}</a></li>
+                                    <li><a href="#tea">{{"Cafe.tea" | translate}}</a></li>
+                                    <li><a href="#coffee">{{"Cafe.coffee" | translate}}</a></li>
+                                    <li><a href="#coldDrinks">{{"Cafe.coldDrinks" | translate}}</a></li>
+                                    <li><a href="#Smoothies">{{"Cafe.Smoothies" | translate}}</a></li>
+                                    <li><a href="#milkShakes">{{"Cafe.milkShakes" | translate}}</a></li>
+                                    <li><a href="#sharbat">{{"Cafe.sharbat" | translate}}</a></li>
                                 </ul>
                             </nav>
 
-                            <section id="breakfast">
-                                <h2>Breakfast</h2>
-                                <ul>
+                            <section id="persianFood">
+                                <h2>{{"Cafe.persianFood" | translate}}</h2>
+                                <ul *ngFor="let food of persianFood">
                                     <li class="d-flex justify-content-between">
-                                        <span>Spaghetti and Meatballs</span>
-                                        <span>$9.99</span>
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
                                     </li>
-                                    <li class="d-flex justify-content-between">French Toast<span>$6.99</span></li>
-                                    <li class="d-flex justify-content-between">Pancakes<span>$6.99</span></li>
-                                    <li class="d-flex justify-content-between">Breakfast Sandwich<span>$4.99</span></li>
+                                    <!--                                    <li class="d-flex justify-content-between">French Toast<span>$6.99</span></li>-->
+                                    <!--                                    <li class="d-flex justify-content-between">Pancakes<span>$6.99</span></li>-->
+                                    <!--                                    <li class="d-flex justify-content-between">Breakfast Sandwich<span>$4.99</span></li>-->
                                 </ul>
                             </section>
 
-                            <section id="lunch">
-                                <h2>Lunch</h2>
-                                <ul>
-                                    <li class="d-flex justify-content-between">Grilled Cheese Sandwich<span>$5.99</span></li>
-                                    <li class="d-flex justify-content-between">Tuna Salad Sandwich<span>$6.99</span></li>
-                                    <li class="d-flex justify-content-between">Caesar Salad<span>$7.99</span></li>
-                                    <li class="d-flex justify-content-between">Chicken Wrap<span>$8.99</span></li>
+                            <section id="foodOfTheDay">
+                                <h2>{{"Cafe.foodOfTheDay" | translate}}</h2>
+                                <ul *ngFor="let food of foodOfTheDay">
+                                    <li class="d-flex justify-content-between">
+                                        <span style="width: 90px;">{{food.name}}</span>
+                                        <span style="width: 150px;text-align: center">{{food.day}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
                                 </ul>
                             </section>
 
-                            <section id="dinner">
-                                <h2>Dinner</h2>
-                                <ul>
-                                    <li class="d-flex justify-content-between">Spaghetti and Meatballs<span>$9.99</span></li>
-                                    <li class="d-flex justify-content-between">Grilled Salmon<span>$12.99</span></li>
-                                    <li class="d-flex justify-content-between">Chicken Alfredo<span>$10.99</span></li>
-                                    <li class="d-flex justify-content-between">Steak and Potatoes<span>$14.99</span></li>
+                            <section id="breakfast">
+                                <h2>{{"Cafe.breakfast" | translate}}</h2>
+                                <ul *ngFor="let food of breakfast">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
                                 </ul>
                             </section>
 
-                            <section id="desserts">
-                                <h2>Desserts</h2>
-                                <ul>
-                                    <li class="d-flex justify-content-between">Chocolate Cake<span>$4.99</span></li>
-                                    <li class="d-flex justify-content-between">Apple Pie<span>$5.99</span></li>
-                                    <li class="d-flex justify-content-between">Ice Cream Sundae<span>$3.99</span></li>
-                                    <li class="d-flex justify-content-between">Churros<span>$4.99</span></li>
+                            <section id="snack">
+                                <h2>{{"Cafe.snack" | translate}}</h2>
+                                <ul *ngFor="let food of snacks">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
                                 </ul>
                             </section>
 
+                            <section id="mainCourse">
+                                <h2>{{"Cafe.mainCourse" | translate}}</h2>
+                                <ul *ngFor="let food of mainCourse">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section id="salad">
+                                <h2>{{"Cafe.salad" | translate}}</h2>
+                                <ul *ngFor="let food of salads">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section id="tea">
+                                <h2>{{"Cafe.tea" | translate}}</h2>
+                                <ul *ngFor="let food of tea">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section id="coffee">
+                                <h2>{{"Cafe.coffee" | translate}}</h2>
+                                <ul *ngFor="let food of coffee">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section id="coldDrinks">
+                                <h2>{{"Cafe.coldDrinks" | translate}}</h2>
+                                <ul *ngFor="let food of coldDrinks">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section id="Smoothies">
+                                <h2>{{"Cafe.Smoothies" | translate}}</h2>
+                                <ul *ngFor="let food of smoothies">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section id="milkShakes">
+                                <h2>{{"Cafe.milkShakes" | translate}}</h2>
+                                <ul *ngFor="let food of milkShakes">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section id="sharbat">
+                                <h2>{{"Cafe.sharbat" | translate}}</h2>
+                                <ul *ngFor="let food of sharbats">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
+                                </ul>
+                            </section>
 
                         </div>
 

@@ -18,10 +18,22 @@
     "comingSoon": "Coming soon ...",
     "description": "The sports complex of Kimia Hotel including a swimming pool, dry and steam sauna, jacuzzi, mist tunnel, massage parlor, etc. will soon be ready to serve the hotel guests with a special discount, as well as the general citizens and dear travelers.\n\nAlso, the sports complex of Kimia Hotel will be ready to sign contracts with organizations, institutions, schools, etc., to get the honor of hosting them."
   },
-    "Cafe": {
-        "cafeMenu": "Cafe Menu",
-        "cafeName": "Parsi Cafe and Restaurant"
-    },
+  "Cafe": {
+    "cafeMenu": "Cafe Menu",
+    "cafeName": "Parsi Cafe and Restaurant",
+    "persianFood": "Persian Food",
+    "foodOfTheDay": "Food of the day",
+    "breakfast": "Breakfast",
+    "snack": "Snacks",
+    "mainCourse": "Main Course",
+    "salad": "salad",
+    "milkShakes": "Milk Shakes",
+    "tea": "Tea",
+    "coffee": "Coffee",
+    "coldDrinks": "Cold Drinks",
+    "Smoothies": "Smoothies",
+    "sharbat": "Sharbat"
+  },
   "Footer": {
     "address1": "Tehran, Parsi Hotel, West Nazari st, 12th Farvardin st, Enghelab st, Enghelab sq ",
     "address2": "Tehran, Pars Hotel, Ravanmehr st, Fafhre Razi st, Enghelab st, Enghelab sq ",
