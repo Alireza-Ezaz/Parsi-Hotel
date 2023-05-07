@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 
 @Component({
@@ -11,10 +11,18 @@ export class LandingComponent implements OnInit {
     focus: any;
     focus1: any;
 
+    public innerWidth: any;
+
     constructor(private translate: TranslateService) {
     }
 
     ngOnInit() {
+        this.innerWidth = window.innerWidth;
+    }
+
+    @HostListener('window:resize', ['$event'])
+    onResize(event) {
+        this.innerWidth = window.innerWidth;
     }
 
     getLanguage() {

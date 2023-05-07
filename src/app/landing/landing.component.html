@@ -1,5 +1,6 @@
 <main>
-    <div style="background-image: url('assets/img/theme/back.jpg');background-size: cover"
+    <div [style.background-size]="innerWidth >= 700 ?  '100% 100%' : 'cover'"
+         style="background-image: url('assets/img/theme/back.jpg');"
          class="position-relative">
         <!-- shape Hero -->
         <section class="section section-lg section-shaped pb-250">
@@ -66,7 +67,7 @@
                                     </div>
                                     <h6 class="text-primary text-uppercase">{{'Landing.roomsAndFacilities' | translate}}</h6>
                                     <img style="width: 80%; height: 150px;border-radius: 0.35rem"
-                                         src="assets/img/mainHotel/Room.jpg" class="">
+                                         src="assets/img/mainHotel/Room1.jpg" class="">
                                     <p style="text-align: justify" [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'rtl' : 'ltr'"
                                        class="description mt-3">{{'Landing.roomsAndFacilitiesDescription' | translate}}</p>
                                     <!--                                    <div>-->
