@@ -26,13 +26,15 @@
     "breakfast": "Breakfast",
     "snack": "Snacks",
     "mainCourse": "Main Course",
+    "vegetarianFood": "Vegetarian Food",
     "salad": "salad",
     "milkShakes": "Milk Shakes",
     "tea": "Tea",
     "coffee": "Coffee",
     "coldDrinks": "Cold Drinks",
     "Smoothies": "Smoothies",
-    "sharbat": "Sharbat"
+    "sharbat": "Sharbat",
+    "cakes": "Cakes"
   },
   "Footer": {
     "address1": "Tehran, Parsi Hotel, West Nazari st, 12th Farvardin st, Enghelab st, Enghelab sq ",

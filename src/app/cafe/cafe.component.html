@@ -1,5 +1,5 @@
 <main class="profile-page">
-    <section style="background-image: url('assets/img/theme/back.jpg');background-size: cover"
+    <section style="background-image: url('assets/img/mainHotel/Cafe1.jpg');background-size: cover"
              class="section-profile-cover section-shaped my-0">
         <!-- Circles background -->
         <div class="shape shape-style-1 shape-primary alpha-4">
@@ -19,26 +19,34 @@
             </svg>
         </div>
     </section>
+
     <section class="section">
         <div class="container">
             <div class="card card-profile shadow mt--300">
                 <div [dir]="getLanguage() === 'fa' || getLanguage() === 'ar' ? 'rtl' : 'ltr'"
                      style="text-align: start" class="px-4">
-                    <section class="section section-lg">
+                    <section>
                         <div class="container">
-                            <h1>{{"Cafe.cafeName" | translate}}</h1>
+<!--                            <h1>{{"Cafe.cafeName" | translate}}</h1>-->
+
+                            <section>
+                                <h1>
+                                    <img id="cafe-logo" src="assets/img/mainHotel/CafeLogo.jpg">
+                                </h1>
+                            </section>
 
                             <section id="cafe-pictures">
                                 <h2>{{"Cafe.cafeMenu" | translate}}</h2>
                             </section>
 
                             <nav>
-                                <ul>
+                                <ul id="menu-tabs">
+                                    <li><a href="#breakfast">{{"Cafe.breakfast" | translate}}</a></li>
                                     <li><a href="#persianFood">{{"Cafe.persianFood" | translate}}</a></li>
                                     <li><a href="#foodOfTheDay">{{"Cafe.foodOfTheDay" | translate}}</a></li>
-                                    <li><a href="#breakfast">{{"Cafe.breakfast" | translate}}</a></li>
                                     <li><a href="#snack">{{"Cafe.snack" | translate}}</a></li>
                                     <li><a href="#mainCourse">{{"Cafe.mainCourse" | translate}}</a></li>
+                                    <li><a href="#vegetarianFood">{{"Cafe.vegetarianFood" | translate}}</a></li>
                                     <li><a href="#salad">{{"Cafe.salad" | translate}}</a></li>
                                     <li><a href="#tea">{{"Cafe.tea" | translate}}</a></li>
                                     <li><a href="#coffee">{{"Cafe.coffee" | translate}}</a></li>
@@ -46,8 +54,19 @@
                                     <li><a href="#Smoothies">{{"Cafe.Smoothies" | translate}}</a></li>
                                     <li><a href="#milkShakes">{{"Cafe.milkShakes" | translate}}</a></li>
                                     <li><a href="#sharbat">{{"Cafe.sharbat" | translate}}</a></li>
+                                    <li><a href="#cakes">{{"Cafe.cakes" | translate}}</a></li>
                                 </ul>
                             </nav>
+
+                            <section id="breakfast">
+                                <h2>{{"Cafe.breakfast" | translate}}</h2>
+                                <ul *ngFor="let food of breakfast">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
+                                </ul>
+                            </section>
 
                             <section id="persianFood">
                                 <h2>{{"Cafe.persianFood" | translate}}</h2>
@@ -73,16 +92,6 @@
                                 </ul>
                             </section>
 
-                            <section id="breakfast">
-                                <h2>{{"Cafe.breakfast" | translate}}</h2>
-                                <ul *ngFor="let food of breakfast">
-                                    <li class="d-flex justify-content-between">
-                                        <span>{{food.name}}</span>
-                                        <span>{{food.price}}</span>
-                                    </li>
-                                </ul>
-                            </section>
-
                             <section id="snack">
                                 <h2>{{"Cafe.snack" | translate}}</h2>
                                 <ul *ngFor="let food of snacks">
@@ -96,6 +105,16 @@
                             <section id="mainCourse">
                                 <h2>{{"Cafe.mainCourse" | translate}}</h2>
                                 <ul *ngFor="let food of mainCourse">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section id="vegetarianFood">
+                                <h2>{{"Cafe.vegetarianFood" | translate}}</h2>
+                                <ul *ngFor="let food of vegetarianFood">
                                     <li class="d-flex justify-content-between">
                                         <span>{{food.name}}</span>
                                         <span>{{food.price}}</span>
@@ -166,6 +185,16 @@
                             <section id="sharbat">
                                 <h2>{{"Cafe.sharbat" | translate}}</h2>
                                 <ul *ngFor="let food of sharbats">
+                                    <li class="d-flex justify-content-between">
+                                        <span>{{food.name}}</span>
+                                        <span>{{food.price}}</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section id="cakes">
+                                <h2>{{"Cafe.cakes" | translate}}</h2>
+                                <ul *ngFor="let food of cakes">
                                     <li class="d-flex justify-content-between">
                                         <span>{{food.name}}</span>
                                         <span>{{food.price}}</span>
